@@ -30,7 +30,7 @@ export const walletList: IntegratedWallet[] = [
     wallet: OKXWallet,
     provider: okxProvider,
     linkToDocs: "https://www.okx.com/web3",
-    supportedNetworks: [Network.MAINNET, Network.SIGNET],
+    supportedNetworks: [Network.MAINNET, Network.SIGNET, Network.TESTNET],
   },
   {
     name: BROWSER_INJECTED_WALLET_NAME,
@@ -46,7 +46,7 @@ export const walletList: IntegratedWallet[] = [
     wallet: TomoWallet,
     provider: tomoProvider,
     linkToDocs: "https://tomo.inc/",
-    supportedNetworks: [Network.MAINNET, Network.SIGNET],
+    supportedNetworks: [Network.MAINNET, Network.SIGNET, Network.TESTNET],
   },
   {
     name: "OneKey",
