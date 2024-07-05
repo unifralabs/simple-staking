@@ -67,6 +67,15 @@ export const Delegation: React.FC<DelegationProps> = ({
           >
             Unbond
           </button>
+          <button
+            className="btn btn-outline btn-xs inline-flex text-sm font-normal text-primary"
+            onClick={() => onWithdraw(stakingTxHash)}
+            disabled={
+              intermediateState === DelegationState.INTERMEDIATE_WITHDRAWAL
+            }
+          >
+            Withdraw
+          </button>
         </div>
       );
     } else if (state === DelegationState.UNBONDED) {
