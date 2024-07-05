@@ -33,7 +33,6 @@ import { ConnectModal } from "./components/Modals/ConnectModal";
 import { ErrorModal } from "./components/Modals/ErrorModal";
 import { TermsModal } from "./components/Modals/Terms/TermsModal";
 import { NetworkBadge } from "./components/NetworkBadge/NetworkBadge";
-import { StakersFinalityProviders } from "./components/StakersFinalityProviders/StakersFinalityProviders";
 import { Staking } from "./components/Staking/Staking";
 import { Stats } from "./components/Stats/Stats";
 import { Summary } from "./components/Summary/Summary";
@@ -385,15 +384,11 @@ const Home: React.FC<HomeProps> = () => {
               />
             )}
           {/* At this point of time is not used */}
-          <StakersFinalityProviders
-            finalityProviders={finalityProviders?.finalityProviders}
-            // totalActiveTVLSat={stats?.activeTVL}
-            queryMeta={{
-              next: fetchNextFinalityProvidersPage,
-              hasMore: hasNextFinalityProvidersPage,
-              isFetchingMore: isFetchingNextFinalityProvidersPage,
-            }}
-          />
+          {/* <StakersFinalityProviders
+            finalityProviders={finalityProvidersData}
+            totalActiveTVLSat={stakingStats?.activeTVL}
+            connected={!!btcWallet}
+          /> */}
         </div>
       </div>
       <FAQ />
